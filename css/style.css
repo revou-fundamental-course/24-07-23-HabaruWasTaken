@@ -617,8 +617,8 @@ nav .menu-button:hover{
     }
 
     .home .content-left .dot-container{
-        left: 170px;
-        bottom: 125px;
+        left: 160px;
+        bottom: 85px;
     }
 
     .home .content-left .next{
@@ -626,7 +626,7 @@ nav .menu-button:hover{
     }
 
     .home .content-left .prev, .home .content-left .next{
-        top: 435px;
+        top: 470px;
     }
 
     .home .content-right .form-wrapper{
