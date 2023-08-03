@@ -21,6 +21,10 @@ html {
     background-attachment: fixed;
 }
 
+img {
+    object-fit: cover;
+}
+
 form input::placeholder {
     padding-left: 10px;
     color: black;
@@ -631,5 +635,13 @@ nav .menu-button:hover{
 
     .our-package .cards{
         width: 100%;
+    }
+
+    .footer .title{
+        font-size: 22px;
+    }
+    
+    .footer .description{
+        font-size: 18px;
     }
 }

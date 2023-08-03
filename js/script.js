@@ -8,6 +8,19 @@ function menuFunction() {
     iBtn[0].classList.toggle('active');    
 }
 
+function validate() {
+    const formName = document.forms["myForm"]["name"].value;
+    const formEmail = document.forms["myForm"]["email"].value;
+    const formInterest = document.forms["myForm"]["option"].value;
+    if(formName == "" || formEmail == ""|| formInterest == "" || formInterest == "default") {
+        alert("Please fill the form correctly!")
+    } else if(!formEmail.toLowerCase().match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) ){
+        alert("Please provide a valid email!")
+    } else {
+        console.log(`Name: ${formName}\nEmail: ${formEmail}\nInterested in: ${formInterest}`)
+    }
+}
+
 let timeOut = 3000;
 let slideIndex = 0;
 let autoOn = true;
