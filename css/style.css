@@ -569,6 +569,13 @@ nav .menu-button:hover{
 }
 
 @media (max-width: 700px) {
+    nav {
+        padding: 25px 35px;
+    }
+
+    nav .logo {
+        font-size: 22px;
+    }
 
     .content {
         display: block;
@@ -584,12 +591,12 @@ nav .menu-button:hover{
     }
 
     .home .content-left .banner{
-        width: 380px;
+        width: 350px;
         height: 280px;
     }
 
     .home .content-left .banner img{
-        width: 380px;
+        width: 350px;
         height: 280px;
     }
 
@@ -606,12 +613,12 @@ nav .menu-button:hover{
     }
 
     .home .content-left .dot-container{
-        left: 185px;
+        left: 170px;
         bottom: 125px;
     }
 
     .home .content-left .next{
-        left: 320px;
+        left: 300px;
     }
 
     .home .content-left .prev, .home .content-left .next{

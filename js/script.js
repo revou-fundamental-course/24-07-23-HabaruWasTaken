@@ -1,3 +1,13 @@
+
+const menuBtn = document.getElementsByClassName('menu-button');
+const menu = document.getElementsByClassName('menu');
+const iBtn = document.getElementsByClassName('fa-bars');
+
+function menuFunction() {
+    menu[0].classList.toggle("active");
+    iBtn[0].classList.toggle('active');    
+}
+
 let timeOut = 3000;
 let slideIndex = 0;
 let autoOn = true;
@@ -54,14 +64,4 @@ function showSlides() {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
-}
-
-const menuBtn = document.getElementsByClassName('menu-button');
-const menu = document.getElementsByClassName('menu');
-const iBtn = document.getElementsByClassName('fa-bars')
-
-function menuFunction() {
-    console.log(menu)
-    menu.classList.toggle("active");
-    iBtn.classList.toggle('active');    
 }
