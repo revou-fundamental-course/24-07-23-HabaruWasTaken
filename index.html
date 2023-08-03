@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revou Travel Agent's</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/08c5ec823d.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            Revou Travel Agent's
+        </div>
+        <div class="menu" id="menu-row">
+            <div class="menu-row"><a href="#home">Home</a></div>
+            <div class="menu-row"><a href="#our-package">Our Package</a></div>
+            <div class="menu-row"><a href="#call-us">Call Us</a></div>
+        </div>
+        <div id="menuBtn" class="menu-button" onclick="menuFunction()"><i id="iBtn" class="fas fa-bars" aria-hidden="true"></i>
+        </div>
+    </nav>
+
+    <div class="section home" id="home">
+        <div class="content">
+            <div class="title">Revou Travel Agent's</div>
+            <div class="subtitle">Your happiness is our happiness</div>
+        </div>
+        <div class="content content-row-2">
+            <div class="content-left">
+                <div class="slideshow">
+                    <div class="banner" style="display: block;">
+                        <img src="/raja ampat.jpg" alt="">
+                    </div>
+                    <div class="banner">
+                        <img src="/raja ampat.jpg" alt="">
+                    </div>
+                    <div class="banner">
+                        <img src="/raja ampat.jpg" alt="">
+                    </div>
+                    <div class="dot-container">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+
+                    <div class="prev" onclick="prevSlide()">&#10094;</div>
+                    <div class="next" onclick="showSlides()">&#10095;</div>
+                </div>
+                <div class="description">"Liburan jadi menyenangkan bersama Revou."</div>
+                <div class="user">
+                    <img src="user-profile.jpg" alt="">
+                    <div class="user-profile">
+                        <div class="user-name">Evan Adhiarja</div>
+                        <div class="user-desc">Pelajar, 16</div>
+                    </div>
+                </div>
+                <!-- bagian bawah -->
+                <div class="benefits-content">
+                    <div class="benefits-description">Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product</div>
+                    <ol>
+                        <li>Your first feature, written in the form of a benefit statement.</li>
+                        <li>Your second feature, written in the form of a benefit statement.</li>
+                        <li>Your third feature, written in the form of a benefit statement.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="content-right">
+                <div class="form-wrapper">
+                    <div class="title">Contact Us</div>
+                    <div class="description">Sales akan menghubungi anda 1x24 jam setelah data kami terima.</div>
+                    <form action="" method="post">
+                        <label for="name">Your Name:</label>
+                        <input class="label" type="text" name="name" id="name" placeholder="First and last name">
+                        <label for="email">Email Address:</label>
+                        <input class="label" type="text" name="email" id="email" placeholder="example@email.com">
+                        <label for="option">What are you interested in?</label>
+                        <select class="label" name="option" id="option">
+                            <option value="default" disabled selected hidden>Select Option</option>
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                        </select>
+                        <input class="button" type="submit" value="SEND">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section our-package" id="our-package">
+        <div class="title">Our Package</div>
+        <div class="cards-wrapper">
+            <div class="cards">
+                <img src="https://a.cdn-hotels.com/gdcs/production128/d1581/5051d8fd-8069-4c18-b58a-b12af862bcbc.jpg?impolicy=fcrop&w=800&h=533&q=medium" alt="" class="cards-image">
+                <div class="cards-title">Bali</div>
+                <div class="cards-description">This description supports and extends the bullet point above.</div>
+            </div>
+            <div class="cards">
+                <img src="https://content.api.news/v3/images/bin/21c5db52cfe31ffb654ce8ef4dcdbbe0   " alt="" class="cards-image">
+                <div class="cards-title">Japan</div>
+                <div class="cards-description">This description supports and extends the bullet point above.</div>
+            </div>
+            <div class="cards">
+                <img src="https://api.time.com/wp-content/uploads/2016/09/singapore-hong-kong.jpg?quality=85&w=1200&h=628&crop=1" alt="" class="cards-image">
+                <div class="cards-title">Singapore</div>
+                <div class="cards-description">This description supports and extends the bullet point above.</div>
+            </div>
+            <div class="cards">
+                <img src="https://uploads-ssl.webflow.com/576fd5a8f192527e50a4b95c/61112649a2bd63b84f74a838_Bandung%20West%20Java_result.jpg" alt="" class="cards-image">
+                <div class="cards-title">Bandung</div>
+                <div class="cards-description">This description supports and extends the bullet point above.</div>
+            </div>
+            <div class="cards">
+                <img src="https://img.okezone.com/content/2018/12/08/406/1988444/kalahkan-santa-fe-surabaya-terpilih-jadi-kota-terindah-di-dunia-kgja0kWxIP.jpg" alt="" class="cards-image">
+                <div class="cards-title">Surabaya</div>
+                <div class="cards-description">This description supports and extends the bullet point above.</div>
+            </div>
+            <div class="cards">
+                <img src="https://kagama.co/wp-content/uploads/2019/10/Mumpung-masih-mahasiswa-dan-belum-direpotkan-dengan-berbagai-tagihan-jangan-sia-siakan-kesempatan-untuk-berlibur-ke-destinasi-wisata-impian..jpeg" alt="" class="cards-image">
+                <div class="cards-title">Third Feature</div>
+                <div class="cards-description">This description supports and extends the bullet point above.</div>
+            </div>
+        </div>
+    </div>
+    <div class="section call-us" id="call-us">
+        <div class="title">Your Closing Argument Headline</div>
+        <div class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid non, sed asperiores pariatur incidunt nihil officia adipisci dolorem, iste repellendus totam maxime expedita dignissimos cum eos perferendis mollitia amet laudantium.</div>
+        <div class="button">CALL TO ACTION</div>
+    </div>
+    <div class="section footer">
+        <div class="title">Revou Travel</div>
+        <div class="description">Terms of Service | Privacy Policy <span class="far fa-copyright"></span>2023</div>
+    </div>
+</body>
+</html>
