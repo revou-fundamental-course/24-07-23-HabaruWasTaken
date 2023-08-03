@@ -2,6 +2,8 @@
 const menuBtn = document.getElementsByClassName('menu-button');
 const menu = document.getElementsByClassName('menu');
 const iBtn = document.getElementsByClassName('fa-bars');
+const danger = document.getElementsByClassName('danger');
+const success = document.getElementsByClassName('success');
 
 function menuFunction() {
     menu[0].classList.toggle("active");
@@ -12,8 +14,9 @@ function validate() {
     const formName = document.forms["myForm"]["name"].value;
     const formEmail = document.forms["myForm"]["email"].value;
     const formInterest = document.forms["myForm"]["option"].value;
+
     if(formName == "" || formEmail == ""|| formInterest == "" || formInterest == "default") {
-        alert("Please fill the form correctly!")
+        alert("Please fill the form!")
     } else if(!formEmail.toLowerCase().match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) ){
         alert("Please provide a valid email!")
     } else {
