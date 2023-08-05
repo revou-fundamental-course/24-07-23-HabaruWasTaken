@@ -145,6 +145,9 @@ nav .menu-button:hover{
 
 .home .content-left .banner img{
     border-radius: 5px;
+    width: 720px;
+    height: 480px;
+    object-fit: cover;
 }
 
 .home .content-left .dot-container{
@@ -185,7 +188,7 @@ nav .menu-button:hover{
 }
 
 .home .content-left .next {
-    left: 685px;
+    left: 705px;
 }
 
 .home .content-left .active {
